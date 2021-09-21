@@ -1,0 +1,74 @@
+@import './_mixins.scss';
+@import './variables' ;
+
+
+
+
+.bg-primary
+{
+    background-color: $color-primary !important;
+}
+.bg-secondary
+{
+    background-color: $color-secondary !important;
+}
+.font-primary
+{
+    color: $color-primary !important;
+}
+.font-secondary
+{
+    color: $color-secondary !important;
+}
+.navbar-brand
+{
+    img 
+    {
+        width: 64px;
+        height: 64px;
+    }
+}
+.banner
+{
+    width: 100%;
+    height: auto;
+}
+.header-wrapper
+{
+    @include mobile
+    {
+        margin-top: 66px !important;
+    }
+}
+.navbar
+{
+    @include mobile
+    {
+        // height: 80px !important;
+        // padding-top: 0px !important;
+    }
+}
+.text-items
+{
+    @include mobile
+    {
+        width: 43% ;
+    }
+}
+.sobremi-wrapper
+{
+    border-radius: 15px;
+}
+.avatar-wrapper
+{
+    width: 230px;
+    height: 230px;  
+    border-radius: 200px;
+    overflow: hidden;
+    img
+    {
+        width: 230px;
+        height: auto;
+        border-radius: 200px;
+    }
+}

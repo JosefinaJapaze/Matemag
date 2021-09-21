@@ -1,0 +1,26 @@
+
+ // MIXINS PARA USAR EN X RESOLUCIONES
+@mixin mobile {
+    
+    @media (max-width:600px) {
+        @content
+    }
+}
+@mixin tablet {
+    
+    @media ( min-width:601px) and (max-width:900px) {
+        @content
+    }
+}
+@mixin web {
+    
+    @media ( min-width:901px) and (max-width:1400px) {
+        @content
+    }
+}
+@mixin webXL {
+    
+    @media ( min-width:1401px) {
+        @content
+    }
+}
