@@ -1,9 +1,21 @@
 @import './_mixins.scss';
 @import './variables' ;
+@import './btn' ;
 
 
-
-
+::placeholder
+{
+    color: #fff;
+    
+    
+}
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;    
+    border-bottom: 35px solid #F7D63A;
+  }
 .bg-primary
 {
     background-color: $color-primary !important;
@@ -11,6 +23,10 @@
 .bg-secondary
 {
     background-color: $color-secondary !important;
+}
+.bg-darker
+{
+    background-color: $color-dark !important;
 }
 .font-primary
 {
@@ -37,7 +53,7 @@
 {
     @include mobile
     {
-        margin-top: 66px !important;
+        margin-top: 48px !important;
     }
 }
 .navbar
@@ -52,12 +68,14 @@
 {
     @include mobile
     {
-        width: 43% ;
+       
     }
 }
 .sobremi-wrapper
 {
     border-radius: 15px;
+    // width: 80% !important;
+    background-color: #566E7A !important; 
 }
 .avatar-wrapper
 {
@@ -85,4 +103,101 @@
     height: 180px;
     padding: 30px;
 
+    @include tablet 
+    {
+
+    }
+
 }
+.input-textarea
+{
+
+    background-color: #566E7A !important;
+    border: 4px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:focus
+    {
+        border-color: #fff;
+        outline: none;
+    }
+}
+.font-mini
+{
+    @include mobile
+    {
+        font-size: 15px !important;
+    }
+}
+.carousel-control-prev-icon {
+    background-image: none;
+}
+.carousel-control-next-icon {
+    background-image: none;
+}
+#mainNav .navbar-nav {
+    
+    
+    li
+    {
+        border-bottom: 1px solid #566E7A;
+        
+        &:first-of-type
+        {
+            border-top: 1px solid #F7D63A;
+        }
+        &:last-of-type
+        {
+            border-bottom: 1px solid #F7D63A;
+            margin-bottom: 45px;
+        }
+    }
+
+}
+#mainNav {
+   
+
+    @include mobile
+    {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+   
+}
+#mainNav .navbar-toggler {
+    
+    height: 100%;
+
+    &:focus
+    {
+        height: 100%;
+    }
+}
+
+
+.carousel-item
+{
+
+    
+    .fotos 
+    {
+        width: 72% !important;
+        height: auto !important;
+        border: 15px solid #F7D63A;
+        border-radius: 40px;
+        box-shadow: 0px 0.5px 2px #ccc inset;
+        margin: 0px auto !important;
+    }
+}
+
+// .carousel-control-prev-icon-dark {
+//     background-image: none !important;
+// }
+// .carousel-control-next-icon-dark {
+//     background-image: none !important;
+// }

@@ -1,9 +1,45 @@
+.btn-matemag {
+  background-color: #fff;
+  border-radius: 50px;
+  height: 50px;
+  line-height: 5px;
+  width: 80%;
+}
+@media (max-width: 600px) {
+  .btn-matemag {
+    width: 283px;
+    text-align: center;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 450px) {
+  .btn-matemag {
+    margin-left: 0;
+  }
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 35px solid #F7D63A;
+}
+
 .bg-primary {
   background-color: #5C6D6E !important;
 }
 
 .bg-secondary {
   background-color: #F7D63A !important;
+}
+
+.bg-darker {
+  background-color: #202527 !important;
 }
 
 .font-primary {
@@ -26,18 +62,13 @@
 
 @media (max-width: 600px) {
   .header-wrapper {
-    margin-top: 66px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .text-items {
-    width: 43%;
+    margin-top: 48px !important;
   }
 }
 
 .sobremi-wrapper {
   border-radius: 15px;
+  background-color: #566E7A !important;
 }
 
 .avatar-wrapper {
@@ -57,10 +88,73 @@
 }
 
 .ref-item {
+  width: 92% !important;
   margin: 0px auto;
   border-radius: 10px;
   height: 180px;
   padding: 30px;
+}
+.input-textarea {
+  background-color: #566E7A !important;
+  border: 4px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-textarea:focus {
+  border-color: #fff;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .font-mini {
+    font-size: 15px !important;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+#mainNav .navbar-nav li {
+  border-bottom: 1px solid #566E7A;
+}
+#mainNav .navbar-nav li:first-of-type {
+  border-top: 1px solid #F7D63A;
+}
+#mainNav .navbar-nav li:last-of-type {
+  border-bottom: 1px solid #F7D63A;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 600px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+#mainNav .navbar-toggler {
+  height: 100%;
+}
+#mainNav .navbar-toggler:focus {
+  height: 100%;
+}
+
+.carousel-item .fotos {
+  width: 72% !important;
+  height: auto !important;
+  border: 15px solid #F7D63A;
+  border-radius: 40px;
+  box-shadow: 0px 0.5px 2px #ccc inset;
+  margin: 0px auto !important;
 }
 
 /*# sourceMappingURL=general.css.map */
