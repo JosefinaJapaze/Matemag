@@ -6,10 +6,6 @@
   background-color: #F7D63A !important;
 }
 
-.bg-darker {
-  background-color: #202527 !important;
-}
-
 .font-primary {
   color: #5C6D6E !important;
 }
@@ -61,7 +57,6 @@
 }
 
 .ref-item {
-  width: 92% !important;
   margin: 0px auto;
   border-radius: 10px;
   height: 180px;
