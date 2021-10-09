@@ -32,7 +32,7 @@
                     <i class="fas fa-bars text-white fs-2 "></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <div class="w-100 d-flex justify-content-center align-items-center mb-5">
+                    <div class="w-100 d-flex justify-content-center align-items-center mb-5 div-logo-mobile ">
                         <img src="./assets/img/logo-drawer.svg" alt="Matemag" class="img-fluid" style="width: 150px;">
                     </div>
                 
@@ -51,9 +51,10 @@
         </nav>
 
         <!-- BANNER-->
-        <header class="w-100 mt-5 header-wrapper">
+        <header class="w-100 header-wrapper mt-7">
             <div class="w-100">
-                <img src="./assets/img/banner.png" class="banner " alt="Matemag banner">
+                <img src="./assets/img/banner.png" class="banner d-none " alt="Matemag banner">
+                <img src="./assets/img/COMPU - BANNER.svg" class="banner-tablet d-none" alt="Matemag banner">
             </div>
         </header>
 
@@ -73,17 +74,26 @@
                 <!-- 3 iconos + text -->
 
                 <div class="row justify-content-center">
-                    <div class="col-sm-8 col-md-6 text-center d-flex flex-column justify-content-center align-items-center mt-3 mb-3 ">
-                        <img src="./assets/img/clasesVirtuales.png" alt="Clases Virtuales">
-                        <p class="p1 text-items text-dark fs-3 mt-2">Clases virtuales y presenciales</p>
+                    <div class="col-lg-4 col-md-12 text-center d-flex flex-column justify-content-center align-items-center mt-3 mb-3 ">
+                        <div class="w-50 mt-4">
+                            <img src="./assets/img/clasesVirtuales.png" alt="Clases Virtuales">
+                            <p class="p1 text-items text-dark fs-3 mt-2">Clases virtuales y presenciales</p>
+                        </div>
+                
                     </div>
-                    <div class="col-sm-8 col-md-6 text-center d-flex flex-column justify-content-center align-items-center">
-                        <img src="./assets/img/calculadora.png" alt="Calculadora">
-                        <p class="p1 text-items text-dark fs-3 mt-2">Clases personalizadas para cada alumno</p>
+                    <div class="col-lg-4 col-md-12 text-center d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 mt-4 ps-5 pe-5 no-padding-mobile no-padding-desktop">
+                            <img src="./assets/img/calculadora.png" alt="Calculadora">
+                            <p class="p1 text-items text-dark fs-3 mt-2">Clases personalizadas para cada alumno</p>
+                        </div>
+                     
                     </div>
-                    <div class="col-sm-8  col-md-6 text-center d-flex flex-column justify-content-center align-items-center">
-                        <img src="./assets/img/notas.png" alt="Notas">
-                        <p class="p1 text-items text-dark fs-3 mt-2">Ofrecemos seguimiento, acompañamiento y apoyo</p>
+                    <div class="col-lg-4  col-md-12 text-center d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 mt-4 mb-5">
+                            <img src="./assets/img/notas.png" alt="Notas">
+                            <p class="p1 text-items text-dark fs-3 mt-2">Ofrecemos seguimiento, acompañamiento y apoyo</p>
+                        </div>
+                  
                     </div>
                 </div>
 
@@ -93,7 +103,7 @@
                 <!-- SOBRE MI - MAGDA-->
                 <div class="row justify-content-center" id="informacion">
                     <!-- Portfolio Item 1-->
-                    <div class="col-sm-12 col-md-6 col-lg-5 mb-5">
+                    <div class="col-12 mb-5">
                         <div class="sobremi-wrapper shadow d-flex flex-column justify-content-center align-items-center bg-primary text-center">
                             <div class="avatar-wrapper shadow mt-3">
                                 <img src="./assets/img/magda.jpg" class="sobremi-img" alt="Foto Magda">
@@ -230,16 +240,19 @@
             <!--MENSAJE A WHATSAPP-->
             <div class="row justify-content-center" id="contacto">
                 <!-- Portfolio Item 1-->
-                <div class="col-sm-12 col-md-6 col-lg-5 mb-5">
+                <div class="col-12 mb-5">
                     <div class="sobremi-wrapper shadow w-100  d-flex flex-column justify-content-center align-items-center bg-primary text-center">
                         <!-- <h2 class="text-white mt-3">Mensaje...</h2> -->
                         <!-- INPUT MENSAJE -->  
                         <textarea name="mensajeWhatsapp" id="mensajeWhatsapp" cols="30" rows="10"
                         placeholder="Ingrese su mensaje..." class="input-textarea mb-4"></textarea>
 
-                        
+
+                        <div class="w-100 d-flex justify-content-end me-5">
+                            <button class="btn btn-matemag text-dark btn-xl mb-4" id="btn-whatsapp" type="submit">Enviar a Whatsapp</button>
+                        </div>
                 
-                    <button class="btn btn-matemag text-dark btn-xl mb-4" id="btn-whatsapp" type="submit">Enviar a Whatsapp</button>
+                    
 
                     </div>
                 </div>
@@ -258,8 +271,11 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-md-6 text-center d-flex justify-content-center align-items-center mt-3 mb-3 ">
-                    <img src="./assets/img/google.png" alt="Email">
-                    <p class="p1 ps-4  text-items text-dark fs-3 mt-2">magdalenaavolio@gmail.com</p>
+                 
+                        <img src="./assets/img/google.png" alt="Email">
+                        <p class="p1 ps-4  text-items text-dark fs-3 mt-2" id="email">magdalenaavolio@gmail.com</p>
+                   
+             
                 </div>
                 <div class="col-sm-6 col-md-6 text-center d-flex justify-content-center align-items-center">
                     <img src="./assets/img/instagram.png" alt="Instagram">

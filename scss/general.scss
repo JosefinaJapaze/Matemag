@@ -9,6 +9,12 @@
     
     
 }
+body 
+{
+    background-image: url('../assets/img/COMPU\ -\ FONDO.svg');
+    background-repeat: repeat;
+    
+}
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -36,6 +42,37 @@
 {
     color: $color-secondary !important;
 }
+.mt-7
+{
+    margin-top: 5.5rem !important;
+}
+#email
+{
+    @include tablet 
+
+    {
+        font-size: 1.2rem !important;
+    }
+ 
+}
+#contacto
+{
+    @include tablet{
+        margin: 0 60px;
+    }
+    #btn-whatsapp
+    {
+        @include mobile 
+        {
+            width: 86% !important;
+        }
+        @include tablet 
+        {
+            width: 60% !important;
+        }
+    }
+}
+
 .navbar-brand
 {
     img 
@@ -44,10 +81,47 @@
         height: 64px;
     }
 }
+.no-padding-mobile
+{
+    @media (max-width:800px) {
+        padding:0 !important
+    }
+  
+}
+.no-padding-desktop
+{
+    @media (min-width:993px) {
+        padding:0 !important
+    }
+  
+}
 .banner
 {
     width: 100%;
     height: auto;
+    @include mobile
+    {
+        display: block !important;
+    }
+    
+}
+.banner-tablet
+{
+    width: 100%;
+    height: auto;
+    @include tablet 
+    {
+        display: block !important;
+    }
+  
+
+}
+.div-logo-mobile
+{
+    // @include tablet
+    // {
+    //     display: none !important;
+    // }
 }
 .header-wrapper
 {
@@ -142,21 +216,24 @@
 }
 #mainNav .navbar-nav {
     
-    
-    li
-    {
-        border-bottom: 1px solid #566E7A;
-        
-        &:first-of-type
+    @media (max-width:990px) {
+
+        li
         {
-            border-top: 1px solid #F7D63A;
-        }
-        &:last-of-type
-        {
-            border-bottom: 1px solid #F7D63A;
-            margin-bottom: 45px;
+            border-bottom: 1px solid #566E7A;
+            
+            &:first-of-type
+            {
+                border-top: 1px solid #F7D63A;
+            }
+            &:last-of-type
+            {
+                border-bottom: 1px solid #F7D63A;
+                margin-bottom: 45px;
+            }
         }
     }
+   
 
 }
 #mainNav {
@@ -174,6 +251,10 @@
     height: 100%;
 
     &:focus
+    {
+        height: 100%;
+    }
+    &:active
     {
         height: 100%;
     }
