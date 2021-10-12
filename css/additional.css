@@ -1,0 +1,19 @@
+.carousel-item .fotos {
+    border-radius: 105px !important;
+}
+textarea {
+    width: 95% !important;
+}
+@media (max-width: 600px) {
+.btn-matemag {
+    margin-left: 0% !important;
+}
+}
+.footer {
+    background-color: #202527 !important;
+}
+@media (min-width: 900px){
+.page-section {
+    padding-top: 150px !important;
+}
+}
