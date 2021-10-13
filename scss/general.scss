@@ -15,6 +15,18 @@ body
     background-repeat: repeat;
     
 }
+.d-none-lg
+{
+    display: none;
+    @include web 
+    {
+        display: none !important;
+    }
+    @include webXL 
+    {
+        display: none !important;
+    }
+}
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -112,16 +124,19 @@ body
     @include tablet 
     {
         display: block !important;
-    }
-  
+    } 
 
 }
 .div-logo-mobile
 {
-    // @include tablet
-    // {
-    //     display: none !important;
-    // }
+     @include web
+     {
+         display: none !important;
+     }
+     @include webXL
+     {
+         display: none !important;
+     }
 }
 .header-wrapper
 {
@@ -232,6 +247,20 @@ body
                 margin-bottom: 45px;
             }
         }
+    }
+    @include web 
+    {
+        justify-content: space-between !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+        padding: 0px 25px !important;
+    }
+    @include webXL
+    {
+        justify-content: space-between !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+        padding: 0px 25px !important;
     }
    
 
