@@ -17,3 +17,8 @@ textarea {
     padding-top: 150px !important;
 }
 }
+@media (max-width: 500px){
+    .social {
+        justify-content: start !important;
+    }
+    }
