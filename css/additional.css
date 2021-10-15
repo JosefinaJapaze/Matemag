@@ -11,6 +11,7 @@ textarea {
 }
 .footer {
     background-color: #202527 !important;
+    padding: 1.5rem 0;
 }
 @media (min-width: 900px){
 .page-section {

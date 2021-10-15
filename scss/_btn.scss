@@ -17,4 +17,25 @@
 
         margin-left: 0;
     }
+    @include web 
+    {        
+        width: 39%;
+    }
+    @include webXL
+    {        
+        width: 39%;
+    }
+}
+#btn-whatsapp-wrapper
+{
+    @include web 
+    {
+        justify-content: flex-end !important;
+        margin-right: 50px !important;
+    }
+    @include webXL 
+    {
+        justify-content: flex-end !important;
+        margin-right: 50px !important;
+    }
 }

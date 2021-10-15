@@ -162,22 +162,52 @@ body
 }
 .sobremi-wrapper
 {
+    
     border-radius: 15px;
     // width: 80% !important;
     background-color: #566E7A !important; 
 }
+#msj-wrapper
+{
+    @include web 
+    {
+        height: 600px;
+    }
+    @include webXL
+    {
+        height: 600px;
+    }
+
+}
 .avatar-wrapper
 {
-    width: 230px;
-    height: 230px;  
+    width: 150px;
+    height: 150px;  
     border-radius: 200px;
     overflow: hidden;
     img
     {
-        width: 230px;
+        width: 150px;
         height: auto;
         border-radius: 200px;
     }
+    @include web 
+    {        
+        width: 151px;
+        height: auto;
+        margin-left: 20px;
+        align-self: flex-start;
+       justify-content: center ;
+    }
+    @include webXL 
+    {        
+        width: 151px;
+        height: auto;
+        margin-left: 20px;
+        align-self: flex-start;
+        justify-content: center ;
+    }
+
 }
 .ref-wrapper
 {
@@ -192,9 +222,15 @@ body
     height: 180px;
     padding: 30px;
 
-    @include tablet 
+    @include web 
     {
-
+        width: 52% !important;
+        height: 250px !important;
+    }
+    @include webXL
+    {
+        width: 52% !important;
+        height: 250px !important;
     }
 
 }
@@ -228,6 +264,31 @@ body
 }
 .carousel-control-next-icon {
     background-image: none;
+}
+.carousel-control-next {
+
+    @include web
+    {
+        right: 180px;
+    }
+
+    @include webXL
+    {
+        right: 280px;
+    }
+   
+}
+.carousel-control-prev {
+    @include web
+    {
+        left: 180px;
+    }
+
+    @include webXL
+    {
+        left: 280px;
+    }
+   
 }
 #mainNav .navbar-nav {
     
@@ -311,3 +372,47 @@ body
 // .carousel-control-next-icon-dark {
 //     background-image: none !important;
 // }
+
+#sobreMagda
+{
+    @include web 
+    {
+        flex-direction: row !important;
+    }
+    @include webXL 
+    {
+        flex-direction: row !important;
+    }
+}
+.sobremate 
+{
+    p 
+    {
+        @include web 
+        {
+            text-align: start;
+            padding: 0 150px !important;
+        }
+        @include webXL 
+        {
+            text-align: start;
+            padding: 0 150px !important;
+        }
+    }
+    h2 
+    {
+        @include web 
+        {
+            text-align: start;
+            padding: 0 150px !important;
+            margin-bottom: 2rem;
+        }
+        @include webXL 
+        {
+            text-align: start;
+            padding: 0 150px !important;
+            margin-bottom: 2rem;
+        }
+
+    }
+}
