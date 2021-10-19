@@ -154,6 +154,16 @@ body {
     display: block !important;
   }
 }
+@media (min-width: 901px) and (max-width: 1400px) {
+  .banner-tablet {
+    display: block !important;
+  }
+}
+@media (min-width: 1401px) {
+  .banner-tablet {
+    display: block !important;
+  }
+}
 
 @media (min-width: 901px) and (max-width: 1400px) {
   .div-logo-mobile {

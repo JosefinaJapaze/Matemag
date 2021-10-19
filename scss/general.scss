@@ -125,6 +125,14 @@ body
     {
         display: block !important;
     } 
+    @include web 
+    {
+        display: block !important;
+    }
+    @include webXL 
+    {
+        display: block !important;
+    }
 
 }
 .div-logo-mobile
